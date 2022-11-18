@@ -241,9 +241,7 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    {%- if settings.cart_type == 'drawer' -%}
-      {%- render 'cart-drawer' -%}
-    {%- endif -%}
+    
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
@@ -255,6 +253,21 @@
     {% endfor %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      {%- if settings.cart_type == 'drawer' -%}
+        {%- render 'cart-drawer' -%}
+      {%- endif -%}
+  
+      {% comment %}
+        Below is custom html that was added to template for testing -CT
+      {% endcomment %}
+
+      <div class="banner">
+        <h1>Corey's Store</h1>
+      </div>
+
+      {% comment %}
+        Below is where the body of the page gets injected   
+      {% endcomment %}
       {{ content_for_layout }}
     </main>
 
