@@ -253,10 +253,7 @@
       </div>
 
 
-      {% for product_option in product.options_with_values %}
-
-    <p> this right here {{ product_option }}</p>
-      {% endfor %}}
+      
 
 
     {% section 'header' %}
@@ -268,6 +265,11 @@
     {% for c in colors %}
       {{ c }}
     {% endfor %} -->
+
+    {% for product_option in product.options_with_values %}
+
+    <p> this right here {{ product_option }}</p>
+      {% endfor %}}
 
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
