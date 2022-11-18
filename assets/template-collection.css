@@ -78,3 +78,13 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+.corey-banner{
+  width:80%;
+  margin:0 auto;
+  background: #002c80;
+  padding: 1%;
+}
+.corey-banner h1{
+  color:#fff;
+}
