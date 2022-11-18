@@ -254,6 +254,10 @@
 
     {% section 'header' %}
 
+    {% for p in product.options_by_name %}}
+
+    {{ p }}
+      {% endfor %}}
 
     {% comment %} {% assign colors = "red, blue, yellow" | split: ", " %}
     {% for c in colors %}
