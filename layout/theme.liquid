@@ -244,6 +244,14 @@
     
 
     {% section 'announcement-bar' %}
+
+    {% comment %}
+        Below is custom html that was added to template for testing -CT
+      {% endcomment %}
+      <div class="corey-banner">
+        <h1>Corey's Store</h1>
+      </div>
+
     {% section 'header' %}
 
 
@@ -257,13 +265,7 @@
         {%- render 'cart-drawer' -%}
       {%- endif -%}
   
-      {% comment %}
-        Below is custom html that was added to template for testing -CT
-      {% endcomment %}
 
-      <div class="corey-banner">
-        <h1>Corey's Store</h1>
-      </div>
 
       {% comment %}
         Below is where the body of the page gets injected   
