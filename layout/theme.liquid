@@ -258,7 +258,6 @@
       </div>
 
    
- {{ page.title }}
     
 
     {% section 'header' %}
@@ -272,8 +271,8 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
        <p>Things should be below this:</p>
 
-      {% for p in all_products %}
-        <p>Stuff: {{ p }}</p>
+      {% for p in collection.products%}
+        {{ p.title }}
       {% endfor %}
 
      
