@@ -273,7 +273,7 @@
        <p>Things should be below this:</p>
 
       {% for p in all_products %}
-        {{ p }}
+        <p>Stuff: {{ p }}</p>
       {% endfor %}
 
       
@@ -281,11 +281,7 @@
         {%- render 'cart-drawer' -%}
       {%- endif -%}
 
-      <p>Things should be below this:</p>
 
-      {% for p in all_products %}
-        {{ p }}
-      {% endfor %}
 
       {% comment %}
         Below is where the body of the page gets placed   
