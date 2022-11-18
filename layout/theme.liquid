@@ -270,13 +270,9 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
 
-<<<<<<< HEAD
-       {% for p in collection.products%}
-        The {{ p.title }} in our {{p.collection}} collection has a price of {{ p.price | money }}
-=======
-      {% for p in collection.products%}
-        The {{ p.title }} has a price of {{ p.price | money }}
->>>>>>> 814e8bb237b8a7413ef31f4d3d3dbeacff7ac23a
+      {% for p in collection.products %}
+        The {{ p.title }} in our {{ p.collection }} collection has a price of {{ p.price | money }}
+        <div>{{ p.featured_image | img_url: '600x600' | img_tag: p.featured_image.alt }}</div>
       {% endfor %}
 
      
@@ -286,10 +282,6 @@
         {%- render 'cart-drawer' -%}
       {%- endif -%}
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 814e8bb237b8a7413ef31f4d3d3dbeacff7ac23a
 
       {% comment %}
         Below is where the body of the page gets placed   
