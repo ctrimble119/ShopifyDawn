@@ -251,7 +251,11 @@
       <div class="corey-banner">
         <h1>Corey's Store</h1>
       </div>
+    
+{% for value in product_option.values %}
 
+    <p>This right here {{ product_option }}</p>
+    {% endfor %}}
 
       
 
@@ -266,10 +270,7 @@
       {{ c }}
     {% endfor %} -->
 
-    {% for value in product_option.values %}
-
-    <p>This right here {{ product_option }}</p>
-    {% endfor %}}
+    
 
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
