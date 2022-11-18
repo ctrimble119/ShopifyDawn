@@ -270,7 +270,7 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
 
-      {% for p in collection.products%}
+      {% for p in collection.products %}
         The {{ p.title }} in our {{ p.collection }} collection has a price of {{ p.price | money }}
       {% endfor %}
 
