@@ -270,7 +270,9 @@
         <p>This right here {{ value }}</p>
       {% endfor %}
 
-      {{ collection.id }}
+      {% for p in all_products %}
+        {{ p }}
+      {% endfor %}}
 
       
       {%- if settings.cart_type == 'drawer' -%}
