@@ -272,7 +272,7 @@
 
       {% for p in collection.products %}
         The {{ p.title }} in our {{ p.collection }} collection has a price of {{ p.price | money }}
-        <div><img src="/{{ p.featured_image }}" alt="{{ p.title }}" /></div>
+        <div>{{ p.featured_image | img_url: '600x600' | img_tag: p.featured_image.alt }}</div>
       {% endfor %}
 
      
