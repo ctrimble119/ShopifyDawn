@@ -276,6 +276,8 @@
         <p>Stuff: {{ p }}</p>
       {% endfor %}
 
+      {{ page.title }}
+
       
       {%- if settings.cart_type == 'drawer' -%}
         {%- render 'cart-drawer' -%}
