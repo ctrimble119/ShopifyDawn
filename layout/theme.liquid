@@ -266,9 +266,12 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
        <p>Things should be below this:</p>
-    {% for value in product_option.values %}
-      <p>This right here {{ value }}</p>
-    {% endfor %}
+      {% for value in product_option.values %}
+        <p>This right here {{ value }}</p>
+      {% endfor %}
+
+
+      
       {%- if settings.cart_type == 'drawer' -%}
         {%- render 'cart-drawer' -%}
       {%- endif -%}
@@ -276,7 +279,7 @@
 
 
       {% comment %}
-        Below is where the body of the page gets injected   
+        Below is where the body of the page gets placed   
       {% endcomment %}
       {{ content_for_layout }}
     </main>
