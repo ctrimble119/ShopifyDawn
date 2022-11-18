@@ -241,7 +241,12 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    
+        
+<!--     {% assign colors = "red, blue, yellow" | split: ", " %}
+    {% for c in colors %}
+      {{ c }}
+    {% endfor %} -->
+
 
     {% section 'announcement-bar' %}
 
@@ -264,8 +269,12 @@
       {%- if settings.cart_type == 'drawer' -%}
         {%- render 'cart-drawer' -%}
       {%- endif -%}
-  
 
+      <p>Things should be below this:</p>
+
+      {% for p in all_products %}
+        {{ p }}
+      {% endfor %}
 
       {% comment %}
         Below is where the body of the page gets injected   
