@@ -266,10 +266,10 @@
       {{ c }}
     {% endfor %} -->
 
-    {% for product_option in product.options_by_name %}
+    {% for value in product_option.values %}
 
     <p>This right here {{ product_option }}</p>
-      {% endfor %}}
+    {% endfor %}}
 
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
