@@ -252,20 +252,31 @@
 
     {% comment %}
         Below is custom html that was added to template for testing -CT
-      {% endcomment %}
+    {% endcomment %}
       <div class="corey-banner">
         <h1>Corey's Store</h1>
       </div>
 
+   
+
+    
+
     {% section 'header' %}
 
+    
+    
 
-    {% comment %} {% assign colors = "red, blue, yellow" | split: ", " %}
-    {% for c in colors %}
-      {{ c }}
-    {% endfor %} {% endcomment %}
+    
+
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+       <p>Things should be below this:</p>
+
+      {% for p in all_products %}
+        {{ p }}
+      {% endfor %}}
+
+      
       {%- if settings.cart_type == 'drawer' -%}
         {%- render 'cart-drawer' -%}
       {%- endif -%}
@@ -277,7 +288,7 @@
       {% endfor %}
 
       {% comment %}
-        Below is where the body of the page gets injected   
+        Below is where the body of the page gets placed   
       {% endcomment %}
       {{ content_for_layout }}
     </main>
