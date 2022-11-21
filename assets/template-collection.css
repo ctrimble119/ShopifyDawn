@@ -88,3 +88,10 @@
 .corey-banner h1{
   color:#fff;
 }
+
+.corey-flexbox{
+  display:flex;
+  flex-wrap: wrap;
+  width:80%;
+  margin:0 auto;
+}

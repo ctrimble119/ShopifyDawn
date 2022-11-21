@@ -270,11 +270,12 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
 
+      <div class="corey-flexbox">
       {% for p in collection.products %}
         The {{ p.title }} in our {{ p.collection }} collection has a price of {{ p.price | money }}
         <div>{{ p.featured_image | img_url: '250x250' | img_tag: p.featured_image.alt }}</div>
       {% endfor %}
-
+    </div>
      
 
       
