@@ -95,3 +95,8 @@
   width:80%;
   margin:0 auto;
 }
+
+.corey-flexbox div{
+  width:25%;
+  margin: 0 2%;
+}

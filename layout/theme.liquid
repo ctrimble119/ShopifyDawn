@@ -273,8 +273,8 @@
       <div class="corey-flexbox">
       {% for p in collection.products %}
         <div>
-        The {{ p.title }} in our {{ p.collection }} collection has a price of {{ p.price | money }}
-        <div>{{ p.featured_image | img_url: '250x250' | img_tag: p.featured_image.alt }}</div>
+          <div>{{ p.featured_image | img_url: '250x250' | img_tag: p.featured_image.alt }}</div>
+          The {{ p.title }} in our {{ p.collection }} collection has a price of {{ p.price | money }}
         </div>
       {% endfor %}
     </div>
